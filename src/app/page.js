@@ -6,14 +6,14 @@ export default function Home() {
       <header className="p-10">
         <p className="font-Metallica text-4xl text-center">Rohit . bajaJ</p>
         <div className="text-center font-Metallica text-2xl text-gray-800  dark:text-gray-50">
-          <h1>
-            it  graduate
-          </h1>
+          <h1>it graduate</h1>
         </div>
         <div className="flex gap-4 mt-6 justify-center text-gray-600 dark:text-zinc-100 font-medium">
-          <Link href="/">Projects</Link>
+          <Link href="/projects">Projects</Link>
           <h1>|</h1>
-          <Link href="/">Whoami</Link>
+          <Link href="/about">Whoami</Link>
+          <h1>|</h1>
+          <Link href="/guestbook">Guestbook</Link>
         </div>
       </header>
       <section className="h-max px-10 font-normal text-gray-800 dark:text-zinc-100 text-center italic">
@@ -60,6 +60,12 @@ export default function Home() {
           </h1>
         </div>
       </section>
+      <div className="flex justify-center content-center mt-20">
+        <h1 className="w-max border p-2 bg-gray-50 rounded-full dark:text-gray-900">
+          💡 <span className="font-bold">Note:</span> This project is a work in
+          progress{" "}
+        </h1>
+      </div>
     </main>
   );
 }
