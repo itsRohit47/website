@@ -8,7 +8,7 @@ export const metadata = {
 export default function About() {
   return (
     <main className="py-10 px-6">
-      <div className="flex gap-10">
+      <div className="flex gap-5">
         <div className="w-max h-max p-2 rounded-xl bg-gray-100 dark:bg-inherit dark:border mt-2 hover:shadow-md">
           <Link href="/">
             <svg
@@ -63,12 +63,6 @@ export default function About() {
         <h1 className="mt-10 text-2xl font-bold">Higher Education</h1>
         <br></br>
         <p></p>
-      </div>
-      <div className="flex justify-center content-center mt-10">
-        <h1 className="w-max border p-2 bg-gray-50 rounded-full dark:text-gray-900">
-          💡 <span className="font-bold">Note:</span> This project is a work in
-          progress{" "}
-        </h1>
       </div>
     </main>
   );

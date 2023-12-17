@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <main className="py-10 px-6">
-      <div className="flex gap-5 content-center justify-center ">
+      <div className="flex gap-5">
         <div className="w-max h-max p-2 rounded-xl bg-gray-100 dark:bg-inherit dark:border mt-2">
           <Link href="/">
             <svg
@@ -29,12 +29,6 @@ export default function Projects() {
             have worked on.
           </p>
         </div>
-      </div>
-      <div className="flex justify-center content-center mt-20">
-        <h1 className="w-max border p-2 bg-gray-50 rounded-full dark:text-gray-900">
-          💡 <span className="font-bold">Note:</span> This project is a work in
-          progress{" "}
-        </h1>
       </div>
     </main>
   );

@@ -13,7 +13,7 @@ export default function Home() {
           <h1>|</h1>
           <Link href="/about">Whoami</Link>
           <h1>|</h1>
-          <Link href="/guestbook">Guestbook</Link>
+          <Link href="/about">Guestbook</Link>
         </div>
       </header>
       <section className="h-max px-10 font-normal text-gray-800 dark:text-zinc-100 text-center italic">
@@ -25,10 +25,10 @@ export default function Home() {
       </section>
 
       <section className="p-2 flex content-center justify-center">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col">
           <div className="flex content-center justify-center">
             <Image
-              className="rounded-full border mt-2"
+              className="rounded-full border m-2"
               src="/profile.jpg"
               width={100}
               height={100}
@@ -60,12 +60,6 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <div className="flex justify-center content-center mt-20">
-        <h1 className="w-max border p-2 bg-gray-50 rounded-full dark:text-gray-900">
-          💡 <span className="font-bold">Note:</span> This project is a work in
-          progress{" "}
-        </h1>
-      </div>
     </main>
   );
 }
