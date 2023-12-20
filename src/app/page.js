@@ -9,7 +9,7 @@ export default function Home() {
           <h1>it graduate</h1>
         </div>
         <div className="flex gap-4 mt-6 justify-center text-gray-600 dark:text-zinc-100 font-medium">
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects/academic">Projects</Link>
           <h1>|</h1>
           <Link href="/about">Whoami</Link>
           <h1>|</h1>
@@ -40,7 +40,7 @@ export default function Home() {
             <span className="font-extrabold text-5xl tracking-widest">
               ROHIT
             </span>
-            <div className="mt-2 text-lg text-center cursor-pointer bg-gray-900 border-2 shadow-xl text-zinc-100 font-semibold w-max px-4 py-2 rounded-lg flex gap-2 content-center justify-center">
+            <div className="mt-2 text-lg text-center cursor-pointer bg-gray-800 hover:bg-gray-900 border-2 shadow-xl text-zinc-100 font-semibold w-max px-4 py-2 rounded-lg flex gap-2 content-center justify-center">
               Resume{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
