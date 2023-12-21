@@ -9,6 +9,7 @@ export default function AcademicLayout({ children }) {
         Deakin University (2021-2023).
       </p>
       <br></br>
+      <br></br>
       {children}
     </div>
   );

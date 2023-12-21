@@ -17,10 +17,48 @@ const project1 = {
   ],
 };
 
+const project2 = {
+  projectName: "Game Development (C++)",
+  imageSource: "/images/ninja.png",
+  description:
+    "Building a 2d game from sctratch using splashkit library with C++",
+  startDate: "2023-03-10",
+  endDate: "2023-10-20",
+  status: "completed",
+
+  technologies: ["React Native", "Firebase"],
+  tasks: [
+    "Develop user-friendly interface",
+    "Integrate health tracking APIs",
+    "Implement user authentication",
+    "Conduct usability testing",
+  ],
+};
+
+const project3 = {
+  projectName: "Banking System (OOPS, C#)",
+  imageSource: "/images/dollar.jpg",
+  description:
+    "Terminal based banking system that allows you to create/delete accounts, check balance, transfer funds between accounts.",
+  startDate: "2023-03-10",
+  endDate: "2023-10-20",
+  status: "completed",
+
+  technologies: ["React Native", "Firebase"],
+  tasks: [
+    "Develop user-friendly interface",
+    "Integrate health tracking APIs",
+    "Implement user authentication",
+    "Conduct usability testing",
+  ],
+};
+
 export default function Academic() {
   return (
     <div className="flex justify-center content-center flex-wrap gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
       <ProjectItem project={project1}></ProjectItem>
+      <ProjectItem project={project2}></ProjectItem>
+      <ProjectItem project={project3}></ProjectItem>
     </div>
   );
 }
