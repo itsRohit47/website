@@ -25,7 +25,7 @@ export default function Home() {
           <h1>it graduate</h1>
         </div>
         <div className="flex gap-4 mt-6 justify-center text-gray-600 dark:text-zinc-100 font-medium">
-          <Link href="/projects/academic">Projects</Link>
+          <Link href="/projects">Projects</Link>
           <h1>|</h1>
           <Link href="/about">Whoami</Link>
           <h1>|</h1>
