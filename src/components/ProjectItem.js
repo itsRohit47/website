@@ -31,9 +31,12 @@ export default function Item({ project }) {
         </div>
 
         <div className="flex justify-between items-center">
-          <button className="px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white rounded-md">
+          <a
+            href={`/projects/${project.id}`}
+            className="px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white rounded-md"
+          >
             View Details
-          </button>
+          </a>
         </div>
       </div>
     </div>

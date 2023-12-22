@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Love from "../components/Love";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,8 @@ export default function RootLayout({ children }) {
           💡 <span className="font-bold">Note:</span> This project is a work in
           progress{" "}
         </h1>
-
         {children}
+        <Love></Love>
       </body>
     </html>
   );

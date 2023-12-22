@@ -1,12 +1,15 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
-export const metadata = {
-  title: "Rohit Bajaj | Projects",
-  description: "Rohit Bajaj (projects)",
-};
+// export const metadata = {
+//   title: "Rohit Bajaj | Projects",
+//   description: "Rohit Bajaj (projects)",
+// };
 
 export default function ProjectsLayout({ children }) {
+  const pathname = usePathname();
   return (
     <section>
       <main className="relative">
@@ -36,12 +39,36 @@ export default function ProjectsLayout({ children }) {
               projects
             </h1>
 
-            <div className="lg:hidden flex gap-4 justify-center text-gray-600 dark:text-zinc-100 font-medium">
-              <Link href="/projects/academic">Academic</Link>
+            <div className="lg:hidden flex gap-4 justify-center font-medium">
+              <Link
+                className={`link ${
+                  pathname === "/projects/academic" ? "active" : ""
+                }`}
+                scroll={false}
+                href="/projects/academic"
+              >
+                Academic
+              </Link>
               <h1>|</h1>
-              <Link href="/projects/personal">Personal</Link>
+              <Link
+                className={`link ${
+                  pathname === "/projects/personal" ? "active" : ""
+                }`}
+                scroll={false}
+                href="/projects/personal"
+              >
+                Personal
+              </Link>
               <h1>|</h1>
-              <Link href="/projects/freelance">Freelance</Link>
+              <Link
+                className={`link ${
+                  pathname === "/projects/freelance" ? "active" : ""
+                }`}
+                scroll={false}
+                href="/projects/freelance"
+              >
+                Freelance
+              </Link>
             </div>
             <br className="lg:hidden"></br>
             <p className="text-center text-gray-600 text-sm lg:text-lg">
@@ -121,36 +148,42 @@ export default function ProjectsLayout({ children }) {
           </div>
         </div>
       </main>
-      <div className="hidden lg:grid grid-cols-6">
+      <div className="hidden lg:grid grid-cols-5">
         <div className="flex content-center justify-center mt-20">
           {" "}
-          <div className="flex h-max flex-col gap-5 text-gray-600  dark:text-zinc-100 font-medium text-lg py-10">
+          <div className="flex h-max flex-col gap-5  font-medium text-lg py-10">
             <Link
               href="/projects/academic"
-              className="hover:bg-gray-100  rounded-sm px-2"
+              scroll={false}
+              className={`link ${
+                pathname === "/projects/academic" ? "active" : ""
+              }`}
             >
               Academic
             </Link>
             <Link
+              className={`link ${
+                pathname === "/projects/personal" ? "active" : ""
+              }`}
+              scroll={false}
               href="/projects/personal"
-              className=" hover:bg-gray-100  rounded-sm px-2"
             >
               Personal
             </Link>
             <Link
+              className={`link ${
+                pathname === "/projects/freelance" ? "active" : ""
+              }`}
+              scroll={false}
               href="/projects/freelance"
-              className=" hover:bg-gray-100  rounded-sm px-2"
             >
               Freelance
             </Link>
           </div>
         </div>
-        <div className="col-span-4 px-10 mx-auto">{children}</div>
+        <div className="col-span-3 px-10 mx-auto">{children}</div>
       </div>
       <div className="lg:hidden px-10"> {children}</div>
-      <div className="mt-40 bg-gray-50 p-2">
-        <p className="text-center font-bold">Made with 💗</p>
-      </div>
     </section>
   );
 }

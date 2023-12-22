@@ -16,3 +16,7 @@ body {
   background: rgb(var(--foreground-rgb));
   color: rgb(var(--text-color));
 }
+
+.active {
+  color: red;
+}
