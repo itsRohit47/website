@@ -1,5 +1,6 @@
 import ProjectItem from "../../../components/ProjectItem";
 const project1 = {
+  id: 3,
   projectName: "Consultant Website",
   imageSource: "/images/gem.png",
   description:

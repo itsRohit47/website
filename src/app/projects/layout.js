@@ -148,10 +148,10 @@ export default function ProjectsLayout({ children }) {
           </div>
         </div>
       </main>
-      <div className="hidden lg:grid grid-cols-5">
-        <div className="flex content-center justify-center mt-20">
+      <div className="hidden lg:grid grid-cols-5 border-right ">
+        <div className="flex content-center justify-center mt-20 border-r-gray-200 border-r">
           {" "}
-          <div className="flex h-max flex-col gap-5  font-medium text-lg py-10">
+          <div className="flex h-max flex-col gap-5  font-medium text-lg py-10 ">
             <Link
               href="/projects/academic"
               scroll={false}

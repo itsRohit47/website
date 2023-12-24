@@ -1,0 +1,41 @@
+{
+  "Projects": [
+    {
+      "id": 1,
+      "name": "Project Echo",
+      "src": "/images/rainforests.jpg",
+
+      "subHeading": "Capstone Project",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, tortor ut porttitor interdum.",
+      "myRole": "Lead Developer",
+      "tasksDone": ["Implemented feature X", "Optimized performance"],
+      "achievements": "Awarded Best Project of the Year",
+      "teamMembers": ["Alice", "Bob", "Charlie"],
+      "groupOrIndividual": "Group",
+      "timeframe": "January 2022 - March 2023",
+      "images": ["url/to/image1.jpg", "url/to/image2.jpg"],
+      "screenshots": ["url/to/screenshot1.png", "url/to/screenshot2.png"],
+      "status": "Completed",
+      "tags": ["React", "Tailwind CSS", "Node.js"]
+    },
+    {
+      "id": 2,
+      "name": "Game Project",
+      "src": "/images/ninja",
+      "subHeading": "Capstone Project",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, tortor ut porttitor interdum.",
+      "myRole": "Lead Developer",
+      "tasksDone": ["Implemented feature X", "Optimized performance"],
+      "achievements": "Awarded Best Project of the Year",
+      "teamMembers": ["Alice", "Bob", "Charlie"],
+      "groupOrIndividual": "Group",
+      "timeframe": "January 2022 - March 2023",
+      "images": ["url/to/image1.jpg", "url/to/image2.jpg"],
+      "screenshots": ["url/to/screenshot1.png", "url/to/screenshot2.png"],
+      "status": "Completed",
+      "tags": ["React", "Tailwind CSS", "Node.js"]
+    },
+    { "id": 3, "name": "game" },
+    { "id": 4, "name": "banking" }
+  ]
+}
