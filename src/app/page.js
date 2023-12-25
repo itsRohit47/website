@@ -1,20 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import Profile from "../components/Profile";
 
 export const metadata = {
   title: "Rohit Bajaj | Home",
   description: "Rohit Bajaj (personal website)",
-};
-
-const me = {
-  name: "Rohit Bajaj",
-  cover: "/images/cover.jpg",
-  image: "/images/profile.jpg",
-  openingStatement: "A Recent IT graduate from Deakin University.",
-  unilogo: "/images/deakin.png",
-  higherEducation: "Bachelor of Information Technology",
-  majors: "Cloud Computing and Computer Networking",
 };
 
 export default function Home() {

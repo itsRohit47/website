@@ -1,27 +1,19 @@
 import ProjectItem from "../../../components/ProjectItem";
-const project1 = {
-  id: 3,
-  projectName: "Consultant Website",
-  imageSource: "/images/gem.png",
-  description:
-    "A website for an immigration bussiness based in Melbourne, to allow them to have better connection with their clients and get appointment bookings.",
-  startDate: "2023-11-01",
-  endDate: "2023-11-29",
-  status: "completed",
+import data from "../data.json";
 
-  technologies: ["React Native", "Firebase"],
-  tasks: [
-    "Develop user-friendly interface",
-    "Integrate health tracking APIs",
-    "Implement user authentication",
-    "Conduct usability testing",
-  ],
-};
-
-export default function Freelance() {
+export default function Academic() {
   return (
-    <div className="flex justify-center content-center flex-wrap gap-10 md:grid md:grid-cols-2 lg:grid-cols-3">
-      <ProjectItem project={project1}></ProjectItem>
+    <div className="flex justify-center content-center flex-wrap gap-10 lg:grid lg:grid-cols-2">
+      {data.Projects.map(
+        (project, index) =>
+          project.type === "freelance" && (
+            <ProjectItem
+              key={index}
+              className="text-gray-700"
+              project={project}
+            ></ProjectItem>
+          )
+      )}
     </div>
   );
 }

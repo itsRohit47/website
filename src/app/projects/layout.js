@@ -3,11 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-// export const metadata = {
-//   title: "Rohit Bajaj | Projects",
-//   description: "Rohit Bajaj (projects)",
-// };
-
 export default function ProjectsLayout({ children }) {
   const pathname = usePathname();
   return (

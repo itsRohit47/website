@@ -2,40 +2,120 @@
   "Projects": [
     {
       "id": 1,
-      "name": "Project Echo",
-      "src": "/images/rainforests.jpg",
-
-      "subHeading": "Capstone Project",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, tortor ut porttitor interdum.",
-      "myRole": "Lead Developer",
-      "tasksDone": ["Implemented feature X", "Optimized performance"],
-      "achievements": "Awarded Best Project of the Year",
-      "teamMembers": ["Alice", "Bob", "Charlie"],
-      "groupOrIndividual": "Group",
+      "type": "academic",
+      "projectName": "Project Echo",
+      "imageSource": "/images/rainforests.jpg",
+      "subHeading": "University Capstone Project",
+      "description": "An AI/ML based software solution for wild life conservationists to monitor wildlife, especially endangered species located in Wild Otways, Australia. ",
+      "myRole": [
+        {
+          "title": "Junior Web Developer",
+          "tasks": [
+            "Collaborated with cross-functional teams to develop and implement new features for the frontend of web applications.",
+            "Worked in an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress.",
+            "Wrote clean, efficient, and maintainable code in HTML, CSS, and JavaScript, adhering to best practices and coding standards.",
+            "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+            "Utilized industry-standard tools such as Visual Studio Code and GitHub for code development, version control, and collaboration."
+          ]
+        },
+        {
+          "title": "Lead Cloud Engineer",
+          "tasks": [
+            "Led the cloud component for the university capstone project, overseeing all cloud-related activities on Google Cloud Platform including monthly budgets.",
+            "Managed permissions and access controls for various teams, enabling specific resource access.",
+            "Led deployment of project components on a Kubernetes cluster, optimizing scalability and ensuring seamless performance.",
+            "Established a robust CI/CD pipeline, streamlining development workflows and enhancing project efficiency.",
+            "Collaborated closely with cross-functional teams to ensure alignment of deployment strategies with project objectives and timelines."
+          ]
+        }
+      ],
       "timeframe": "January 2022 - March 2023",
-      "images": ["url/to/image1.jpg", "url/to/image2.jpg"],
-      "screenshots": ["url/to/screenshot1.png", "url/to/screenshot2.png"],
-      "status": "Completed",
-      "tags": ["React", "Tailwind CSS", "Node.js"]
+      "tags": [
+        "National Award Winner",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "JavaScript",
+        "Docker",
+        "Kubernetes",
+        "GCP"
+      ]
     },
     {
       "id": 2,
-      "name": "Game Project",
-      "src": "/images/ninja",
-      "subHeading": "Capstone Project",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, tortor ut porttitor interdum.",
-      "myRole": "Lead Developer",
-      "tasksDone": ["Implemented feature X", "Optimized performance"],
-      "achievements": "Awarded Best Project of the Year",
-      "teamMembers": ["Alice", "Bob", "Charlie"],
-      "groupOrIndividual": "Group",
+      "type": "academic",
+      "projectName": "Game Project",
+      "imageSource": "/images/ninja.jpg",
+      "subHeading": "Introduction to Programming",
+      "description": "Building a mario like 2D game from sctratch.",
+      "myRole": [
+        {
+          "title": "Game Developer",
+          "tasks": ["Coming Soon"]
+        }
+      ],
       "timeframe": "January 2022 - March 2023",
-      "images": ["url/to/image1.jpg", "url/to/image2.jpg"],
-      "screenshots": ["url/to/screenshot1.png", "url/to/screenshot2.png"],
-      "status": "Completed",
-      "tags": ["React", "Tailwind CSS", "Node.js"]
+      "tags": ["C++", "Splashkit", "Programming", "Pointers"]
     },
-    { "id": 3, "name": "game" },
-    { "id": 4, "name": "banking" }
+    {
+      "id": 3,
+      "type": "academic",
+      "projectName": "Banking System",
+      "imageSource": "/images/dollar.jpg",
+      "subHeading": "Object Oriented Programming",
+      "description": "A terminal based banking system that allows you to perform core banking functionalities such as creating an account, checking balance, transfering funds, reversing transactions and so on.",
+      "myRole": [
+        {
+          "title": "System Developer",
+          "tasks": ["Coming Soon"]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["C#", "OOPS", "Programming"]
+    },
+    {
+      "id": 4,
+      "type": "personal",
+      "projectName": "Personal Website",
+      "imageSource": "/images/r.png",
+      "subHeading": "An effort to go above and beyond.",
+      "description": "this.Project()",
+      "myRole": [
+        {
+          "title": "Full Stack Web Developer",
+          "tasks": [
+            "Collaborated with cross-functional teams to develop and implement new features for the frontend of web applications.",
+            "Worked in an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress.",
+            "Wrote clean, efficient, and maintainable code in HTML, CSS, and JavaScript, adhering to best practices and coding standards.",
+            "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+            "Utilized industry-standard tools such as Visual Studio Code and GitHub for code development, version control, and collaboration."
+          ]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["Next Js", "Tailwind CSS"]
+    },
+    {
+      "id": 5,
+      "type": "freelance",
+      "projectName": "Immigration Bussiness Website",
+      "imageSource": "/images/gem.png",
+      "subHeading": "A website for an immigration agent based in Melbourne.",
+      "description": "I helped my family friend to build a website for his bussiness. This invloved developing the home page, an about page, listing the services, providing helful resources and so on. In addition, i also implemented Facebook Bussiness suite (Chat Bubble) to allow clients ask questions directly from them. Lastly, i implemented an appointment booking feature by integrating Calendly to the website.",
+      "myRole": [
+        {
+          "title": "Full Stack Web Developer",
+          "tasks": [
+            "Collaborated with cross-functional teams to develop and implement new features for the frontend of web applications.",
+            "Worked in an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress.",
+            "Wrote clean, efficient, and maintainable code in HTML, CSS, and JavaScript, adhering to best practices and coding standards.",
+            "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+            "Utilized industry-standard tools such as Visual Studio Code and GitHub for code development, version control, and collaboration."
+          ]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["Vue Js", "Tailwind CSS"]
+    }
   ]
 }

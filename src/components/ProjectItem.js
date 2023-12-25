@@ -14,22 +14,18 @@ export default function Item({ project }) {
       </div>
       <div className="p-4">
         <h1 className="text-xl font-bold mb-2">{project.projectName}</h1>
-        <p className="text-gray-600 text-base mb-4">{project.description}</p>
-        <div className="mb-4">
-          <p className="text-sm text-gray-500">
-            <span className="font-semibold">Timeframe:</span>{" "}
-            {project.startDate} to {project.endDate || "Ongoing"}
-          </p>
-          <p className="text-sm text-gray-500">
-            <span className="font-semibold">Status:</span>{" "}
-            {project.status === "ongoing" ? (
-              <span className="text-green-500">Ongoing</span>
-            ) : (
-              <span className="text-blue-500">Completed</span>
-            )}
-          </p>
-        </div>
-
+        <p className="text-gray-600 text-base mb-4">{project.subHeading}</p>
+        <ul className="list-none flex gap-2 flex-wrap font-medium text-sm lg:text-base text-gray-600 ">
+          {project.tags.map((tag, index) => (
+            <li
+              key={index}
+              className="text-gray-700 border rounded bg-gray-100 px-2 py-1 "
+            >
+              #{tag}
+            </li>
+          ))}
+        </ul>
+        <br></br>
         <div className="flex justify-between items-center">
           <a
             href={`/projects/${project.id}`}
