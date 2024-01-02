@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const me = {
   name: "Rohit Bajaj",
@@ -38,6 +39,9 @@ export default function Profile() {
           height={30}
           alt="github icon"
         ></Image>
+        <a href="https://github.com/itsRohit47" target="_blank">
+          link
+        </a>
         <Image
           src="/icons/linkedin.svg"
           width={40}
