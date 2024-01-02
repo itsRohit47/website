@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
           💡 <span className="font-bold">Note:</span> This project is a work in
           progress{" "}
         </h1>
-        <div className="min-h-screen">{children}</div>
+        <div className="min-h-screen text-sm">{children}</div>
         <Love></Love>
       </body>
     </html>
