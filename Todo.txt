@@ -1,0 +1,5 @@
+add a breadcrum to pages
+
+build resume page - add print icon
+
+detailed projects

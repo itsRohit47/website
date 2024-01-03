@@ -1,7 +1,6 @@
-import Link from "next/link";
-import Nav from "../components/Navigation";
 import Landing from "../components/Landing";
 import Work from "../components/Work";
+import Education from "../components/Education";
 
 export const metadata = {
   title: "Rohit Bajaj | Home",
@@ -10,14 +9,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex-col flex gap-10 lg:gap-20">
-      {/* <div className="flex justify-center m-6"> */}
-      <Nav></Nav>
-      {/* </div> */}
-      {/* <div className="max-w-xl lg:max-w-4xl p-5 lg:mx-auto flex flex-col gap-10"> */}
-      <Landing></Landing>
-      <Work></Work>
-      {/* </div> */}
+    <main className="lg:grid lg:grid-cols-4">
+      <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-5">
+        <Landing></Landing>
+        <Education></Education>
+        <Work></Work>
+      </div>
     </main>
   );
 }
