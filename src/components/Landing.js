@@ -9,6 +9,7 @@ export default function landing() {
         width={60}
         height={60}
       ></Image>
+      <h1 className="text-gray-500 text-xl font-semibold">| Rohit Bajaj</h1>
       <h1 className="text-gray-900 text-2xl font-bold">
         IT Graduate (Deakin University) | Certified AWS Cloud Practitioner |
         Aspiring Developer and Passionate IT Enthusiast
@@ -23,7 +24,7 @@ export default function landing() {
         commitment to excellence and passion for innovation make me a valuable
         asset in any professional setting.
       </p>
-      <div className="flex flex-col gap-4 font-semibold text-base">
+      <div className="flex flex-col gap-4 font-semibold text-base w-max">
         <div className="flex gap-2 hover:text-purple-600 hover:cursor-pointer">
           <h1>Follow me on</h1>
           <Image
@@ -43,6 +44,9 @@ export default function landing() {
             width={25}
             height={25}
           ></Image>
+        </div>
+        <div className="flex gap-2 hover:text-purple-600 hover:cursor-pointer">
+          <h1>rohitbajaj13@yahoo.com</h1>
         </div>
       </div>
     </div>

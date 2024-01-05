@@ -16,7 +16,7 @@ const work = [
 
 export default function Work() {
   return (
-    <div className="max-w-xl h-max p-4 border border-gray-200 rounded-lg flex flex-col gap-4">
+    <div className="max-w-xl h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4">
       <div className="w-full flex font-semibold gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function Work() {
           <div key={index} className="flex gap-2 p-2">
             <div className="border rounded-full my-auto">
               <Image
-                className=" border-4 border-white rounded-full w-10 h-10"
+                className=" border-2 border-white rounded-full w-10 h-10"
                 src={company.icon}
                 alt={company.name}
                 height={50}

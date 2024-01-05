@@ -16,12 +16,14 @@ export default function Projects() {
         projects, or anything i have worked on to learn something.
       </p>
       <ProjectsIcons></ProjectsIcons>
-
-      {data.Projects.map((project, index) => (
-        <div key={index}>
-          <ProjectItem project={project}></ProjectItem>
-        </div>
-      ))}
+      <br></br>
+      <div className="flex flex-col gap-10">
+        {data.Projects.map((project, index) => (
+          <div key={index}>
+            <ProjectItem project={project}></ProjectItem>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

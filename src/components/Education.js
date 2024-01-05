@@ -6,12 +6,11 @@ const work = [
     icon: "/images/deakin.svg",
     timeframe: "Mar 2021 - Nov 2023",
   },
-  
 ];
 
 export default function Education() {
   return (
-    <div className="max-w-xl h-max p-4 border border-gray-200 rounded-lg flex flex-col gap-4">
+    <div className="max-w-xl h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4">
       <div className="w-full flex font-semibold gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,9 +31,9 @@ export default function Education() {
       <div>
         {work.map((company, index) => (
           <div key={index} className="flex gap-2 p-2">
-            <div className="border rounded-full my-auto">
+            <div className="">
               <Image
-                className=" border-4 border-white rounded-full w-10 h-10"
+                className="rounded-full w-20 h-20"
                 src={company.icon}
                 alt={company.name}
                 height={50}
@@ -43,8 +42,8 @@ export default function Education() {
             </div>
             <div className="flex-flex-col gap-2 w-full">
               <h1 className="font-semibold text-base">{company.name}</h1>
-                <p className="text-gray-700">{company.role}</p>
-                <p className="text-gray-700">{company.timeframe}</p>
+              <p className="text-gray-700">{company.role}</p>
+              <p className="text-gray-700">{company.timeframe}</p>
             </div>
           </div>
         ))}
