@@ -1,0 +1,57 @@
+{
+  "Projects": [
+    {
+      "slug": "projectEcho",
+      "type": "Academic",
+      "projectName": "Project Echo",
+      "subHeading": "University Capstone Project",
+      "detailed": "Last year, I successfully completed my university capstone project, where I began as a Junior Web Developer focusing on the navigation aspects of the software. During this phase, I actively participated in sprints, providing valuable input on design and collaborating with the team to brainstorm interface improvements. My contributions extended to integrating a microphone layer into the map, facilitating the location of deployed microphones across the area. Building on this foundation, I transitioned into roles as a Lead DevOps Engineer and Cloud Engineer, taking charge of the cloud component, optimizing Kubernetes deployments, and establishing efficient CI/CD pipelines. Explore my journey and the skills I've cultivated in web development, design collaboration, and cloud engineering.",
+
+      "description": "An AI/ML based software solution for wild life conservationists to monitor wildlife, especially endangered species located in Wild Otways, Australia. ",
+      "roleAndResponsibilities": [
+        "Led the cloud component for the university capstone project, overseeing all cloud-related activities on Google Cloud Platform including monthly budgets.",
+        "Managed permissions and access controls for various teams, enabling specific resource access.",
+        "Led deployment of project components on a Kubernetes cluster, optimizing scalability and ensuring seamless performance.",
+        "Collaborated closely with cross-functional teams to ensure alignment of deployment strategies with project objectives and timelines.",
+        "Collaborated with cross-functional teams to develop and implement new features for the frontend of web applications.",
+        "Worked in an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress.",
+        "Wrote clean, efficient, and maintainable code in HTML, CSS, and JavaScript, adhering to best practices and coding standards.",
+        "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+        "Utilized industry-standard tools such as Visual Studio Code and GitHub for code development, version control, and collaboration."
+      ],
+      "timeframe": "March 2023 - October 2023",
+      "tags": [
+        "National Award Winner",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "JavaScript",
+        "Docker",
+        "Kubernetes",
+        "GCP"
+      ],
+      "skills": [
+        "HTML5",
+        "Cascading Style Sheets (CSS)",
+        "JavaScript",
+        "Frontend Frameworks: Vue.js, Express.js",
+        "Kubernetes Deployments",
+        "Continuous Integration/Continuous Deployment (CI/CD) Pipelines",
+        "Identity and Access Management (IAM)",
+        "Configuration Management",
+        "Google Cloud Platform (GCP)",
+        "Bash scripting",
+        "Python scripting",
+        "Agile Development",
+        "Sprint Planning",
+        "Software Development LifeCycle (SDLC)",
+        "Cross-functional Collaboration",
+        "Visual Studio Code",
+        "GitHub",
+        "Documentation"
+      ],
+      "links": ["https://github.com/DataBytes-Organisation/Project-Echo"],
+      "Media": ["Link 1", "Link 2"]
+    }
+  ]
+}

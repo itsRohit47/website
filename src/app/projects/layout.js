@@ -1,40 +1,23 @@
-import Link from "next/link";
-import data from "../projects/data.json";
+import ProjectsIcons from "../../components/ProjectsIcons";
+export const metadata = {
+  title: "Rohit Bajaj | Projects",
+  description: "Rohit Bajaj (personal website)",
+};
 
 export default function ProjectsLayout({ children }) {
   return (
-    <main className="lg:grid lg:grid-cols-4">
-      <Link href="/">
-        <div className="hidden sticky top-20 col-start-1 p-10 lg:flex justify-end">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-10 h-10"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
-          </svg>
+    <main className="flex flex-col gap-5">
+      <h1 className="text-4xl font-semibold text-center">Projects</h1>
+      <p className="text-gray-500 text-center text-base">
+        Projects i have worked on, it includes university projects, personal
+        projects, or anything i have worked on to learn something.
+      </p>
+      <ProjectsIcons></ProjectsIcons>
+
+      <div className="lg:grid lg:grid-cols-4">
+        <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-2 lg:p-5">
+          {children}
         </div>
-      </Link>
-      <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-2 lg:p-5">
-        {children}
-      </div>
-      <div className="hidden lg:block col-start-4 p-10">
-        <ul className="sticky top-20">
-          {data.Projects.map((project, index) => (
-            <div key={index}>
-              <Link href={project.projectName} className="my-1">
-                {project.projectName}
-              </Link>
-            </div>
-          ))}
-        </ul>
       </div>
     </main>
   );

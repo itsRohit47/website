@@ -1,5 +1,4 @@
 import Link from "next/link";
-import data from "../projects/data.json";
 
 export default function ProjectsLayout({ children }) {
   return (

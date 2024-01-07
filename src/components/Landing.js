@@ -11,8 +11,8 @@ export default function landing() {
       ></Image>
       <h1 className="text-gray-500 text-xl font-semibold">| Rohit Bajaj</h1>
       <h1 className="text-gray-900 text-2xl font-bold">
-        IT Graduate (Deakin University) | Certified AWS Cloud Practitioner |
-        Aspiring Developer and Passionate IT Enthusiast
+        IT Graduate (Deakin University) | Aspiring Developer | Certified AWS
+        Cloud Practitioner and Passionate IT Enthusiast
       </h1>
       <p className="text-gray-600">
         As a highly motivated IT graduate, I bring a wealth of hands-on
@@ -24,7 +24,7 @@ export default function landing() {
         commitment to excellence and passion for innovation make me a valuable
         asset in any professional setting.
       </p>
-      <div className="flex flex-col gap-4 font-semibold text-base w-max">
+      <div className="flex flex-col gap-4 font-semibold text-base w-max text-sm">
         <div className="flex gap-2 hover:text-purple-600 hover:cursor-pointer">
           <h1>Follow me on</h1>
           <Image

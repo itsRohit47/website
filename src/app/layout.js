@@ -10,10 +10,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
       </head>
       <body className="text-sm bg-slate-50">
+        <div className="bg-gray-200 p-2 text-center font-bold">
+          Note: <span className="font-semibold">This project is a work in progress.</span>
+        </div>
         <div className="flex justify-center m-2  sticky top-2">
           <Nav></Nav>
         </div>
-        <div className="min-h-screen">{children}</div>
+        <div className="min-h-screen mt-5">{children}</div>
         <Love></Love>
       </body>
     </html>

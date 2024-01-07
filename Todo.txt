@@ -3,3 +3,81 @@ add a breadcrum to pages
 build resume page - add print icon
 
 detailed projects
+
+
+{
+      "id": 2,
+      "type": "academic",
+      "projectName": "Game Project",
+      "imageSource": "/images/ninja.jpg",
+      "subHeading": "Introduction to Programming",
+      "description": "Building a mario like 2D game from sctratch.",
+      "myRole": [
+        {
+          "title": "Game Developer",
+          "tasks": ["Coming Soon"]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["C++", "Splashkit", "Programming", "Pointers"]
+    },
+    {
+      "id": 3,
+      "type": "academic",
+      "projectName": "Banking System",
+      "imageSource": "/images/dollar.jpg",
+      "subHeading": "Object Oriented Programming",
+      "description": "A terminal based banking system that allows you to perform core banking functionalities such as creating an account, checking balance, transfering funds, reversing transactions and so on.",
+      "myRole": [
+        {
+          "title": "System Developer",
+          "tasks": ["Coming Soon"]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["C#", "OOPS", "Programming"]
+    },
+    {
+      "id": 4,
+      "type": "personal",
+      "projectName": "Personal Website",
+      "imageSource": "/images/r.png",
+      "subHeading": "An effort to go above and beyond.",
+      "description": "this.Project()",
+      "myRole": [
+        {
+          "title": "Full Stack Web Developer",
+          "tasks": [
+            "Collaborated with cross-functional teams to develop and implement new features for the frontend of web applications.",
+            "Worked in an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress.",
+            "Wrote clean, efficient, and maintainable code in HTML, CSS, and JavaScript, adhering to best practices and coding standards.",
+            "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+            "Utilized industry-standard tools such as Visual Studio Code and GitHub for code development, version control, and collaboration."
+          ]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["Next Js", "Tailwind CSS"]
+    },
+    {
+      "id": 5,
+      "type": "freelance",
+      "projectName": "Immigration Bussiness Website",
+      "imageSource": "/images/gem.png",
+      "subHeading": "A website for an immigration agent based in Melbourne.",
+      "description": "I helped my family friend to build a website for his bussiness. This invloved developing the home page, an about page, listing the services, providing helful resources and so on. In addition, i also implemented Facebook Bussiness suite (Chat Bubble) to allow clients ask questions directly from them. Lastly, i implemented an appointment booking feature by integrating Calendly to the website.",
+      "myRole": [
+        {
+          "title": "Full Stack Web Developer",
+          "tasks": [
+            "Collaborated with cross-functional teams to develop and implement new features for the frontend of web applications.",
+            "Worked in an Agile development environment, participating in sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress.",
+            "Wrote clean, efficient, and maintainable code in HTML, CSS, and JavaScript, adhering to best practices and coding standards.",
+            "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+            "Utilized industry-standard tools such as Visual Studio Code and GitHub for code development, version control, and collaboration."
+          ]
+        }
+      ],
+      "timeframe": "January 2022 - March 2023",
+      "tags": ["Vue Js", "Tailwind CSS"]
+    }

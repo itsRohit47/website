@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <header className="border w-max px-6 py-2 rounded-full shadow-lg text-white bg-gray-800">
+    <header className="border w-max px-6 py-2 rounded-full shadow-lg backdrop-blur-xl">
       <div className="flex gap-4 font-medium">
         <Link className="hover:text-purple-600" href="/">
           Home

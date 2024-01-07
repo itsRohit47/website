@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Item({ project }) {
   return (
-    <div className="hover:bg-gray-100 hover:rounded-lg hover:cursor-pointer p-4 flex flex-col gap-3">
+    <div className="hover:bg-gray-100 hover:cursor-pointer p-4 flex flex-col gap-3 lg:w-96 border-2 rounded-lg">
       <div className="text-gray-400">| {project.timeframe}</div>
       <h1 className="font-semibold text-gray-800 text-lg">
         {project.projectName} - {project.subHeading}
@@ -17,7 +17,7 @@ export default function Item({ project }) {
         ))}
       </ul>
       <div className="flex gap-2 text-purple-600 font-semibold">
-        <Link href="/projects/${project.id}">Read More</Link>{" "}
+        <Link href={`/projects/${project.slug}`}>Read More</Link>{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
