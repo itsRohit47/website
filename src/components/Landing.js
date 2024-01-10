@@ -2,30 +2,43 @@ import Image from "next/image";
 export default function landing() {
   return (
     <div className="flex flex-col gap-5">
-      <Image
-        className="rounded-full border"
-        src="/images/profile.jpg"
-        alt="thats me"
-        width={60}
-        height={60}
-      ></Image>
-      <h1 className="text-gray-500 text-xl font-semibold">| Rohit Bajaj</h1>
-      <h1 className="text-gray-900 text-2xl font-bold">
-        IT Graduate (Deakin University) | Aspiring Developer | Certified AWS
-        Cloud Practitioner and Passionate IT Enthusiast
-      </h1>
-      <p className="text-gray-600">
-        As a highly motivated IT graduate, I bring a wealth of hands-on
-        experience in cloud platforms, specifically AWS and GCP, coupled with a
-        robust background in web and software development through various
-        projects. Recognized for being a fast learner and a collaborative
-        professional, I am actively seeking entry-level IT positions to initiate
-        a rewarding career journey in the dynamic realm of technology. My
-        commitment to excellence and passion for innovation make me a valuable
-        asset in any professional setting.
+      <div className="lg:flex gap-5">
+        <div>
+          <Image
+            className="rounded-lg border object-cover h-52 object-top shadow-md"
+            src="/images/profile.jpg"
+            alt="thats me"
+            width={400}
+            height={100}
+          ></Image>
+          <br></br>
+        </div>
+        <div>
+          <h1 className="text-gray-500 text-xl font-semibold tracking-widest">
+            ROHIT BAJAJ
+          </h1>
+          <br></br>
+          <h1 className="text-2xl font-semibold bg-gray-50 p-3 rounded-md text-gray-500">
+            Experienced Web Developer - frontend and backend | IT Graduate
+            (Deakin University) | Certified AWS Cloud Practitioner
+          </h1>
+        </div>
+      </div>
+      <p className="text-gray-600 ">
+        Hi, Rohit this side. Having worked on couple of web development projects
+        as a frontend and cloud enginner, i am ready to kickstart my
+        professional career.{" "}
+        <span className=" bg-purple-100 text-purple-500 p-1 rounded-md font-semibold">
+          Get in touch if you need a quality developer in your team.
+        </span>{" "}
+        Actively seeking new opprtunities and available to start immideately.
       </p>
-      <div className="flex flex-col gap-4 font-semibold text-base w-max text-sm">
-        <div className="flex gap-2 hover:text-purple-600 hover:cursor-pointer">
+      <div className="flex flex-col gap-3 font-semibold w-max text-sm">
+        <a
+          href="https://github.com/itsRohit47"
+          target="_blank"
+          className="flex gap-2 hover:text-purple-600 hover:cursor-pointer"
+        >
           <h1>Follow me on</h1>
           <Image
             className="rounded-full"
@@ -34,8 +47,12 @@ export default function landing() {
             width={25}
             height={25}
           ></Image>
-        </div>
-        <div className="flex gap-2 hover:text-purple-600 hover:cursor-pointer">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/iamrohitbajaj/"
+          target="_blank"
+          className="flex gap-2 hover:text-purple-600 hover:cursor-pointer"
+        >
           <h1>Follow me on</h1>
           <Image
             className="rounded-full"
@@ -44,9 +61,9 @@ export default function landing() {
             width={25}
             height={25}
           ></Image>
-        </div>
+        </a>
         <div className="flex gap-2 hover:text-purple-600 hover:cursor-pointer">
-          <h1>rohitbajaj13@yahoo.com</h1>
+          <a href="mailto:rohitbajaj13@yahoo.com">rohitbajaj13@yahoo.com</a>
         </div>
       </div>
     </div>

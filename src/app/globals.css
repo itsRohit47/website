@@ -18,5 +18,9 @@ body {
 }
 
 .active {
-  color: red;
+  color: #9333ea;
+}
+
+.link:hover {
+  color: #9333ea  ;
 }

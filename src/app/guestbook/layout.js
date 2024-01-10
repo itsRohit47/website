@@ -21,7 +21,7 @@ export default function ProjectsLayout({ children }) {
           </svg>
         </div>
       </Link>
-      <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-2 lg:p-5">
+      <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-4 lg:p-5">
         {children}
       </div>
     </main>

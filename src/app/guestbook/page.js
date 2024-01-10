@@ -6,7 +6,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-4xl font-semibold text-center">GUESTBOOK</h1>
+      <h1 className="text-4xl font-semibold text-center">Guestbook</h1>
       <p className="text-gray-500 text-base text-center">
         Leave a mark, say me hi
       </p>

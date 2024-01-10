@@ -15,7 +15,7 @@ export default function ProjectsLayout({ children }) {
       <ProjectsIcons></ProjectsIcons>
 
       <div className="lg:grid lg:grid-cols-4">
-        <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-2 lg:p-5">
+        <div className="lg:col-start-1 lg:col-span-2 flex flex-col gap-10 p-4 lg:px-10">
           {children}
         </div>
       </div>
