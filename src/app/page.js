@@ -12,8 +12,10 @@ export default function Home() {
     <main className="lg:grid lg:grid-cols-4">
       <div className="lg:col-start-2 lg:col-span-2 flex flex-col gap-10 p-5">
         <Landing></Landing>
-        <Education></Education>
-        <Work></Work>
+        <div className="flex lg:flex-row justify-around flex-col gap-10">
+          <Education></Education>
+          <Work></Work>
+        </div>
       </div>
     </main>
   );

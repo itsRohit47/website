@@ -1,11 +1,12 @@
 import data from "../../../data/data.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page({ params }) {
   const selected = data.Projects.find((project) => project.slug == params.slug);
 
   return (
-    <div className="flex flex-col gap-2 text-gray-900 ">
+    <div className="flex flex-col gap-6 text-gray-900 ">
       <div className="flex gap-2">
         <div className="my-auto">
           <Link href="/projects">
@@ -25,7 +26,7 @@ export default function Page({ params }) {
         </div>
         <div className="text-2xl font-semibold">{selected.projectName}</div>
 
-        <div className="border-black h-max px-2 py-1 w-max rounded-full bg-purple-500 text-white">
+        <div className="border-black h-max px-2 py-1 w-max rounded-md bg-purple-50 text-purple-500 font-bold">
           {selected.type}
         </div>
       </div>
@@ -43,9 +44,23 @@ export default function Page({ params }) {
           </Link>
         ))}
       </ul>
+      <ul className="flex gap-10 overflow-scroll">
+        {selected.media.map((i, index) => (
+          <Image
+            className="rounded-lg border object-cover h-52 shadow-md"
+            src={i}
+            key={index}
+            width={400}
+            height={100}
+            alt="images"
+          ></Image>
+        ))}
+      </ul>
       <div className="">{selected.detailed}</div>
       <div>
-        <h1 className="text-lg font-semibold">Roles and Responsibilities</h1>
+        <h1 className="text-lg font-semibold mb-2">
+          Roles and Responsibilities
+        </h1>
         <ul className="list-disc list-inside">
           {selected.roleAndResponsibilities.map((r, index) => (
             <li key={index} className="mb-2">
@@ -55,7 +70,7 @@ export default function Page({ params }) {
         </ul>
       </div>
       <div>
-        <h1 className="text-lg font-semibold">Skills Learned</h1>
+        <h1 className="text-lg font-semibold mb-2">Skills Learned</h1>
         <ul className="list-disc list-inside">
           {selected.skills.map((skill, index) => (
             <li key={index} className=" ">

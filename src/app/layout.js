@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
         {" "}
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
       </head>
-      <body className="text-sm leading-7">
+      <body className="text-sm leading-7 lg:text-base">
         <div className="bg-gray-50 p-2 text-center font-bold">
           Note:{" "}
           <span className="font-semibold">
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
         </div>
         <div className="min-h-screen mt-5">{children}</div>
         <Love></Love>
+        
       </body>
     </html>
   );

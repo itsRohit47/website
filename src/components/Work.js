@@ -2,7 +2,7 @@ import Image from "next/image";
 const work = [
   {
     name: "Chemist Warehouse",
-    role: "Pharmacy Assistant",
+    role: "Storeperson",
     icon: "/images/chem.svg",
     timeframe: "Nov 2023 - Present",
   },
@@ -16,7 +16,7 @@ const work = [
 
 export default function Work() {
   return (
-    <div className="max-w-xl h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4 shadow-md">
+    <div className="max-w-xl h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4 shadow-sm">
       <div className="w-full flex font-semibold gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function Work() {
             <div className="flex flex-col w-full">
               <h1 className="font-semibold text-base">{company.name}</h1>
               <p className="text-gray-700 text-base">{company.role}</p>
-              <p className="text-purple-500 ">{company.timeframe}</p>
+              <p className="text-gray-500 ">{company.timeframe}</p>
             </div>
           </div>
         ))}

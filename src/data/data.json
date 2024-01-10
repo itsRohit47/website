@@ -21,7 +21,7 @@
       ],
       "timeframe": "March 2023 - October 2023",
       "tags": [
-        "National Award Winner",
+        "National AIIA iAwards 2023",
         "HTML",
         "CSS",
         "Node.js",
@@ -51,7 +51,7 @@
         "Documentation"
       ],
       "links": ["https://github.com/DataBytes-Organisation/Project-Echo"],
-      "Media": ["Link 1", "Link 2"]
+      "media": ["/images/echo1.jpg", "/images/echo2.jpg", "/images/echo3.jpg"]
     }
   ]
 }
