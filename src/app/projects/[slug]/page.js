@@ -44,7 +44,7 @@ export default function Page({ params }) {
           </Link>
         ))}
       </ul>
-      <ul className="flex gap-10 overflow-scroll">
+      <ul className="flex gap-10 overflow-scroll lg:flex-wrap">
         {selected.media.map((i, index) => (
           <Image
             className="rounded-lg border object-cover h-52 shadow-md"

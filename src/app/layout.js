@@ -4,7 +4,7 @@ import Nav from "../components/Navigation";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         {" "}
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
         </div>
         <div className="min-h-screen mt-5">{children}</div>
         <Love></Love>
-        
       </body>
     </html>
   );
