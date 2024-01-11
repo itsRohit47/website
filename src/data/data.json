@@ -1,6 +1,74 @@
 {
   "Projects": [
     {
+      "slug": "this",
+      "type": "Personal",
+      "projectName": "Personal Website ",
+      "subHeading": "this.project()",
+      "detailed": "This project is an effort to simplify the presentation of my accomplishments, spanning university projects, freelance work, and personal endeavors. The goal is to make it more accessible for recruiters to understand and appreciate my skills and experiences.",
+      "description": "Handy for recruiters, a responsive website to showcase my skills and projects. ",
+      "roleAndResponsibilities": [
+        "Developed a responsive website using Next.js and Tailwind CSS, ensuring adherence to responsive web design guidelines.",
+        "Solely responsible for project planning, encompassing the overall structure and organization of the website.",
+        "Implemented database functionality for seamless data storage and retrieval.",
+        "Developed and integrated APIs to enable efficient communication between different components of the website.",
+        "Established routing mechanisms to enhance user navigation within the website.",
+        "Designed and incorporated loading screens to optimize the user experience during data fetching.",
+        "Collaborated with UX/UI designers to translate design mockups into functional, interactive web interfaces.",
+        "Handled the deployment process, ensuring the successful launch of the website to its intended hosting environment."
+      ],
+      "timeframe": "December 2023 - Present",
+      "tags": [
+        "Next.js",
+        "JSX",
+        "Tailwind CSS",
+        "Mongo DB",
+        "Frontend Development"
+      ],
+      "skills": [
+        "Next.js",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "Database Management",
+        "Frontend Development",
+        "Software Development LifeCycle (SDLC)",
+        "Visual Studio Code",
+        "GitHub"
+      ],
+      "links": ["https://rohitbajaj.vercel.app/"],
+      "media": ["/images/this.jpg"]
+    },
+    {
+      "slug": "gem",
+      "type": "Freelance",
+      "projectName": "Business Website",
+      "subHeading": "Global Education and Migration, Melbourne",
+      "detailed": "I helped my family friend to upgrade thier old website to a new and custom vue js website with fast navigation. I also implemented Meta Bussiness suite and calendly service for appointment bookings.",
+      "description": "A custom website for an immigration agent based in Melbourne.",
+      "roleAndResponsibilities": [
+        "Conducted thorough requirements analysis in collaboration with the client to understand their specific needs and preferences for the website.",
+        "Utilized Vue.js as the primary frontend framework to develop the website, ensuring a dynamic and responsive user interface.",
+        "Employed Tailwind CSS for efficient and maintainable styling, adhering to modern design principles.",
+        "Assumed complete ownership of the implementation process, from ideation to deployment, ensuring all aspects of the website align with the client's vision and expectations.",
+        "Established routing mechanisms to enhance user navigation within the website.",
+        "Collaborated with the client at various stages to gather feedback and incorporate necessary revisions."
+      ],
+      "timeframe": "November 2023 - December 2023",
+      "tags": ["Vue.js", "Requirements analysis", "Tailwind CSS"],
+      "skills": [
+        "Vue.js",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "Requirements analysis",
+        "Professional Communication",
+        "Frontend Development",
+        "Visual Studio Code",
+        "GitHub"
+      ],
+      "links": ["https://www.globaleducationandmigration.com/"],
+      "media": ["/images/gem2.jpg", "/images/gem.jpg"]
+    },
+    {
       "slug": "projectEcho",
       "type": "Academic",
       "projectName": "Project Echo",
@@ -47,8 +115,7 @@
         "Software Development LifeCycle (SDLC)",
         "Cross-functional Collaboration",
         "Visual Studio Code",
-        "GitHub",
-        "Documentation"
+        "GitHub"
       ],
       "links": ["https://github.com/DataBytes-Organisation/Project-Echo"],
       "media": ["/images/echo1.jpg", "/images/echo2.jpg", "/images/echo3.jpg"]

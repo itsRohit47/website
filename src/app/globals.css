@@ -7,6 +7,11 @@
   src: url("../../public/fonts/Metallica.ttf");
 }
 
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --text-color: 0, 0, 0;
@@ -15,12 +20,17 @@
 body {
   background: rgb(var(--foreground-rgb));
   color: rgb(var(--text-color));
+  scrollbar-color: transparent transparent;
 }
 
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  display: none;
+}
 .active {
   color: #9333ea;
 }
 
 .link:hover {
-  color: #9333ea  ;
+  color: #9333ea;
 }
