@@ -1,16 +1,10 @@
 import Image from "next/image";
 const work = [
   {
-    name: "Chemist Warehouse",
-    role: "Storeperson",
-    icon: "/images/chem.svg",
-    timeframe: "Nov 2023 - Present",
-  },
-  {
     name: "7 Eleven Inc.",
     role: "Customer Service Representative",
     icon: "/images/7eleven.svg",
-    timeframe: "Jan 2022 - Nov 2023",
+    timeframe: "Jan 2022 - Present",
   },
 ];
 
