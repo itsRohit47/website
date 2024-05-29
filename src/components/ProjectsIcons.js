@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Projects() {
   return (
-    <div className="flex p-4 bg-gray-50 flex-wrap gap-6 content-center justify-center">
+    <div className="flex flex-wrap gap-6">
       <Image
         src="/icons/vue.svg"
         width={30}

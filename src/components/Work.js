@@ -1,16 +1,16 @@
 import Image from "next/image";
 const work = [
   {
-    name: "7 Eleven Inc.",
-    role: "Customer Service Representative",
-    icon: "/images/7eleven.svg",
-    timeframe: "Jan 2022 - Present",
+    name: "Deakin University",
+    role: "Seasonal Academic - School of IT",
+    icon: "/images/deakin.svg",
+    timeframe: "Feb 2024 - Present",
   },
 ];
 
 export default function Work() {
   return (
-    <div className="max-w-xl h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4 shadow-sm">
+    <div className=" h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4 shadow-sm">
       <div className="w-full flex font-semibold gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"

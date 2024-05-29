@@ -10,7 +10,7 @@ const work = [
 
 export default function Education() {
   return (
-    <div className="max-w-xl h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4 shadow-sm">
+    <div className="h-max p-2 border border-gray-200 rounded-lg flex flex-col gap-4 shadow-sm">
       <div className="w-full flex font-semibold gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export default function Education() {
           />
         </svg>
 
-        <span className="text-base">Qualifications</span>
+        <span className="text-base">Education</span>
       </div>
       <div>
         {work.map((company, index) => (
