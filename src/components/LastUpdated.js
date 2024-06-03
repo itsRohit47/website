@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function LastUpdated() {
   const [lastUpdatedDate, setLastUpdatedDate] = useState(null);
+  const [latestCommitMessage, setLatestCommitMessage] = useState(null);
 
   useEffect(() => {
     const fetchLastUpdatedDate = async () => {
@@ -17,6 +18,8 @@ export default function LastUpdated() {
           month: "long",
           day: "numeric",
         });
+        const commitMessage = data[0].commit.message;
+        setLatestCommitMessage(commitMessage);
 
         setLastUpdatedDate(formattedDate);
       } catch (error) {
@@ -28,9 +31,12 @@ export default function LastUpdated() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center gap-2 px-10">
-      <span className="font-bold">Last Updated</span>
-      <span>{lastUpdatedDate ? lastUpdatedDate : "Loading..."}</span>
+    <div className="w-full justify-center gap-1 dark:text-white flex flex-col">
+      <div>
+        <span className="font-bold">Last Commit </span>
+        <span>{lastUpdatedDate ? lastUpdatedDate : "Loading..."}</span>
+      </div>
+      <p>{latestCommitMessage ? latestCommitMessage : "Loading..."}</p>
     </div>
   );
 }

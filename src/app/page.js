@@ -1,14 +1,14 @@
-import LastUpdated from "../components/LastUpdated";
 export const metadata = {
-  title: "Rohit Bajaj | Home",
+  title: "Rohit Bajaj",
   description: "Rohit Bajaj (personal website)",
 };
 
+import HomePage from "../components/HomePage";
+
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center text-center h-screen gap-5">
-      <h1 className="text-9xl font-medium">Namaste World 🙏</h1>
-      <LastUpdated></LastUpdated>
+    <main className="">
+      <HomePage></HomePage>
     </main>
   );
 }
