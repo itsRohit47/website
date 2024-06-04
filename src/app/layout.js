@@ -15,9 +15,10 @@ export default function RootLayout({ children }) {
         {" "}
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
       </head>
-      <body className="text-sm leading-7 lg:text-base fixed ">
+      <body className="text-sm leading-7 lg:text-base fixed dark ">
         <div className="dark:bg-zinc-900">
           <Nav></Nav>
+
           <div className="h-screen w-screen">
             <div className="absolute top-32 left-1/2 -translate-x-1/2 ">
               <div className="px-2 py-1 border rounded-lg text-gray-500 dark:text-white border-b-4">
