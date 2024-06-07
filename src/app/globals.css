@@ -6,20 +6,13 @@
   @apply transition-colors duration-300;
 }
 
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
+/* Add this to your CSS file or a <style> tag in your component file */
+.fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
