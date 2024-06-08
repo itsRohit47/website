@@ -17,6 +17,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className="text-sm leading-7 lg:text-base fixed dark ">
         <div className="dark:bg-zinc-900">
+          <div className="text-white font-semibold text-sm p-1 bg-blue-500">work in progress</div>
+          <div className="absolute top-10 w-full text-center">
+            <span id="page-name" className="text-white">hi</span>
+          </div>
           <Nav></Nav>
 
           <div className="h-screen w-screen">

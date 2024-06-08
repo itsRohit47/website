@@ -8,10 +8,39 @@ import { useState, useEffect } from "react";
 const Welcome = [<HomePage key={1} />, <Education key={2} />];
 const projectComponents = [<Work key={1} />, <Love key={2} />];
 
+const arrayNames = {
+  Welcome: "Welcome",
+  projectComponents: "Projects",
+};
+
+// Define a mapping of array names to their respective classes
+const arrayClasses = {
+  Welcome: "welcome-class",
+  projectComponents: "projects-class",
+};
+
 export default function Home() {
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
   const [currentComponentArray, setCurrentComponentArray] = useState(Welcome);
   const [animationClass, setAnimationClass] = useState("fade-in");
+
+  const getCurrentArrayName = () => {
+    return currentComponentArray === Welcome
+      ? arrayNames.Welcome
+      : arrayNames.projectComponents;
+  };
+
+  const getCurrentArrayClass = () => {
+    return currentComponentArray === Welcome
+      ? arrayClasses.Welcome
+      : arrayClasses.projectComponents;
+  };
+
+  useEffect(() => {
+    const pageNameElement = document.getElementById("page-name");
+    pageNameElement.innerText = getCurrentArrayName();
+    pageNameElement.className = getCurrentArrayClass();
+  }, [currentComponentArray]);
 
   function handleKeyDown(event) {
     if (
@@ -47,5 +76,9 @@ export default function Home() {
 
   const CurrentComponent = currentComponentArray[currentComponentIndex];
 
-  return <main className={animationClass}>{CurrentComponent}</main>;
+  return (
+    <>
+      <main className={animationClass}>{CurrentComponent}</main>
+    </>
+  );
 }
