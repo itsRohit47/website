@@ -23,6 +23,7 @@ export default function Home() {
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
   const [currentComponentArray, setCurrentComponentArray] = useState(Welcome);
   const [animationClass, setAnimationClass] = useState("fade-in");
+  const sound = new Audio("/audio/sound.mp3");
 
   const getCurrentArrayName = () => {
     return currentComponentArray === Welcome
@@ -47,6 +48,7 @@ export default function Home() {
       ["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp"].includes(event.key)
     ) {
       setAnimationClass("fade-out");
+      sound.play();
 
       setTimeout(() => {
         if (event.key === "ArrowLeft") {
