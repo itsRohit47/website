@@ -1,19 +1,20 @@
 "use client";
+import { useState, useEffect, useRef } from "react";
 import HomePage from "../components/HomePage";
 import Education from "../components/Education";
 import Work from "../components/Work";
 import Love from "../components/Love";
-import { useState, useEffect } from "react";
 
-const Welcome = [<HomePage key={1} />, <Education key={2} />];
-const projectComponents = [<Work key={1} />, <Love key={2} />];
+// Define your components arrays
+const Welcome = [<HomePage key="home" />, <Education key="edu" />];
+const projectComponents = [<Work key="work" />, <Love key="love" />];
 
+// Define names and classes for arrays
 const arrayNames = {
   Welcome: "Welcome",
   projectComponents: "Projects",
 };
 
-// Define a mapping of array names to their respective classes
 const arrayClasses = {
   Welcome: "welcome-class",
   projectComponents: "projects-class",
@@ -23,7 +24,22 @@ export default function Home() {
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
   const [currentComponentArray, setCurrentComponentArray] = useState(Welcome);
   const [animationClass, setAnimationClass] = useState("fade-in");
-  const sound = new Audio("/audio/sound.mp3");
+
+  // Use useRef to create persistent references for the audio elements
+  const sound = useRef(null);
+
+  useEffect(() => {
+    // Initialize the audio elements
+    sound.current = new Audio("audio/sound.mp3");
+  }, []);
+
+  useEffect(() => {
+    const pageNameElement = document.getElementById("page-name");
+    if (pageNameElement) {
+      pageNameElement.innerText = getCurrentArrayName();
+      pageNameElement.className = getCurrentArrayClass();
+    }
+  }, [currentComponentArray]);
 
   const getCurrentArrayName = () => {
     return currentComponentArray === Welcome
@@ -37,18 +53,12 @@ export default function Home() {
       : arrayClasses.projectComponents;
   };
 
-  useEffect(() => {
-    const pageNameElement = document.getElementById("page-name");
-    pageNameElement.innerText = getCurrentArrayName();
-    pageNameElement.className = getCurrentArrayClass();
-  }, [currentComponentArray]);
-
   function handleKeyDown(event) {
     if (
       ["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp"].includes(event.key)
     ) {
       setAnimationClass("fade-out");
-      sound.play();
+      sound.current.play(); // Play switch sound
 
       setTimeout(() => {
         if (event.key === "ArrowLeft") {
@@ -61,13 +71,15 @@ export default function Home() {
           setCurrentComponentIndex((prevIndex) =>
             prevIndex === currentComponentArray.length - 1 ? 0 : prevIndex + 1
           );
+          navigateSoundRef.current.play(); // Play navigate sound
         } else if (event.key === "ArrowUp") {
           setCurrentComponentIndex((prevIndex) =>
             prevIndex === 0 ? currentComponentArray.length - 1 : prevIndex - 1
           );
+          navigateSoundRef.current.play(); // Play navigate sound
         }
         setAnimationClass("fade-in");
-      }, 500); // Match the transition duration in the CSS
+      }, 500); // Ensure this matches your CSS transition duration
     }
   }
 
